@@ -1,0 +1,83 @@
+%
+% Article Template
+%Author: Miguel Amador August 2011
+%Version: 2.0
+% Note: Use with associated 01.definitions.tex file
+%
+% This Template is based in the Template for Article for Physics Thesis by J. Seixas
+%
+
+\documentclass[a4paper,11pt,oneside]{article} %duas colunas
+
+\input{01.definitions}
+
+%
+% PDF Options
+%
+
+\hypersetup{
+             colorlinks=false,
+             citecolor=red,
+             breaklinks=true,
+             bookmarksnumbered=true,
+             bookmarksopen=true,
+             pdftitle={Article Title},
+             pdfauthor={Author Name},
+             pdfsubject={Master Thesis in Biomedical Engineering},
+             pdfcreator={Document Creator Name},
+             pdfkeywords={Template, Latex, Article}}
+
+
+\begin{document}
+
+% Uncomment to use custom header and footer fields
+%\pagestyle{outras.pag}
+%\thispagestyle{primeira.pag}
+
+%
+% Title and author
+%
+\title{My title}
+\author{My name\\
+\textit{Under supervision of My Supervisor}\\ % supervisor
+\textit{Dep. Physics, IST, Lisbon, Portugal}}
+\maketitle
+\begin{abstract}
+This is the text for my abstract. It should be simple, as short as possible. All the text in the paper will be in two columns from now on.
+\end{abstract}
+
+\bigskip
+\textbf{\Large Keywords:} keyword1, keyword2, ...
+\bigskip
+
+%
+%
+%
+
+%\begin{multicols}{2} %Uncomment to two column article (uncomment also at the end of the document)
+%\twocolumn %Set two column in new page
+
+
+%
+% Article Text Body 
+%
+
+
+
+\input{content}
+
+%
+% Bibliography
+%
+
+\bibliographystyle{IEEEtran}
+\bibliography{02.biblio}
+
+%
+% List of Acronyms Used
+%
+\acrodef{SN}{Dummy Acronym}
+
+
+%\end{multicols}
+\end{document}
